@@ -1,0 +1,111 @@
+.nav-item {
+    font-size: 18px;
+    padding-left: 1rem;
+}
+.form-nill  {
+    display: flex;
+
+position:absolute;
+top:900px;
+left:400px;
+bottom:0px;
+text-align: left;
+margin: 0 auto; 
+
+}
+#name {
+    font-size: small;
+   display:flex;
+   
+    text-align: left;
+}
+#touch {
+    font-size: 25px;
+    padding:left;
+}
+.phone-icon {
+    width:20px;
+    height:20px;
+    display:inline-block;
+    position:relative;
+    border:2px solid #000;
+    border-radius:5px;
+
+}
+.phone-icon::before {
+    content:"";
+    diplay:block;
+    position:absolute;
+    top:-6px;
+    left:5px;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    border:2px solid #000;
+
+    
+}
+.phone-icon {
+  color:#000;
+  font-size:24px;   
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p {
+  margin: 0;
+  margin-right: 10px;
+}
+.footer-email {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-email input {
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  .footer-email button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .footer-email button:hover {
+    background-color: #333;
+  }
+  /* component.css or component.html */
+  .container {
+    height: 300px; /* Specify desired height */
+    width: 100%; /* Specify desired width */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .scroll-down-content {
+    position: fixed; /* Position the element */
+    display: none; /* Hide initially */
+    /* Specify other desired styles */
+  }
+  

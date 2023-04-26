@@ -1,0 +1,99 @@
+<main>
+  <section class="section section-shaped section-lg">
+    <div class="shape shape-style-1 bg-gradient-default">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <!-- 
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="card bg-secondary shadow border-0">
+          <div class="card-body px-lg-5 py-lg-5">
+          -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-18">
+        <div class="row row-grid">
+            <div class="card border-0" style="float: right; width: 630px;">
+              <div class="card-body py-4"> </div>
+            </div>
+    
+          <div class="col-lg-4">
+            <div class="card border-0" style="float: left; width: 350px;">
+              <div class="card-body py-3">
+              
+
+    <form [formGroup]="angForm" novalidate>
+          <div class="form-group">
+              <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+              </div>
+              <input class="form-control" formControlName="email" placeholder="Email" type="text">
+              </div>
+          </div>
+          <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+              <div *ngIf="angForm.controls['email'].errors.required">
+                Email is required.
+              </div>
+          </div>
+           <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                </div>
+              <input class="form-control" formControlName="password" placeholder="Password" type="password">
+              </div>
+          </div>
+          <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" class="alert alert-danger">
+              <div *ngIf="angForm.controls['password'].errors.required">
+                Password is required.
+              </div>
+          </div>
+          
+          <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+            <label class="custom-control-label" for=" customCheckLogin">
+              <span>Remember me</span>
+            </label>
+          </div>
+          
+          <div class="sign text-center">
+          <button type="submit"
+              [disabled]="angForm.pristine || angForm.invalid" class="btn btn-primary">
+              Signin
+          </button>
+          </div>
+    </form>
+  
+    <div class="row mt-3" style="padding-top: 5px;">
+      <div class="col-6 text-left">
+        <a href="" class="text-light" [routerLink]="['/register']">
+          <small style="font-size: 15px; color: gray; color: dodgerblue;"><u>Create new account</u></small>
+        </a>
+      </div>
+      <br>
+      <div class="col-6 text-right">
+        <a href="" class="text-light" [routerLink]="['/questions']">
+          <small style="font-size: 15px; color: gray; color: dodgerblue;"><u>Forgot password?</u></small>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  </section>
+  </main>

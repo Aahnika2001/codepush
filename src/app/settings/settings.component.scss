@@ -1,0 +1,31 @@
+.container-fluid {
+    margin-top: 60px;
+    padding-bottom: 17px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    width: 230px;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.form-group {
+    padding: 5px;
+}
+
+.form-inline {
+    padding: 10px;
+}
+
+textarea {
+    color: gray;
+}
+
+button {
+    width: 470px;
+}
