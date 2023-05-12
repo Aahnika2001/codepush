@@ -1,0 +1,211 @@
+<main>
+    <section class="section section-shaped section-lg">
+      <div class="shape shape-style-1 bg-gradient-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="card bg-secondary shadow border-0">
+              <div class="card-body px-lg-4 py-lg-4">
+                <form role="form">
+                  <div class="text-center mb-3">
+                    <small style="font-weight: bolder;">Choose new security questions and answers <br> to recover your account</small>
+                  </div>
+                    <div class="select">
+                    <select id="standard-select">
+                      <option value="Option 1">Dropdown 1</option>
+                      <option value="Option 2">What is the name of the town where you were born?</option>
+                      <option value="Option 3">What is the name of your first pet?</option>
+                      <option value="Option 4">When you were young?</option>
+                      <option value="Option 5">what did you want to be when you grew up?</option>
+                      <option value="Option 6">What’s your favorite movie?</option>
+                      <option value="Option 7">What is your astrological sign?</option>
+                      <option value="Option 8">What was your first car?</option>
+                      <option value="Option 9">What city were you born in?</option>
+                      <option value="Option 10">What was your favorite elementary school teacher’s name?</option>
+                      <option value="Option 11">What is your birth month?</option>
+                    </select>
+                    <span class="focus"></span>
+                  </div>
+
+                  <div class="input-container">
+                    <input class="input-field" type="text" placeholder="Input 1" name="Answer">
+                  </div>
+
+                  <div class="select">
+                    <select id="standard-select">
+                      <option value="Option 1">Dropdown 2</option>
+                      <option value="Option 2">What is the name of the town where you were born?</option>
+                      <option value="Option 3">What is the name of your first pet?</option>
+                      <option value="Option 4">When you were young?</option>
+                      <option value="Option 5">what did you want to be when you grew up?</option>
+                      <option value="Option 6">What’s your favorite movie?</option>
+                      <option value="Option 7">What is your astrological sign?</option>
+                      <option value="Option 8">What was your first car?</option>
+                      <option value="Option 9">What city were you born in?</option>
+                      <option value="Option 10">What was your favorite elementary school teacher’s name?</option>
+                      <option value="Option 11">What is your birth month?</option>
+                    </select>
+                    <span class="focus"></span>
+                  </div>
+
+                  <!--
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Security Question 2</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="dropdown-item" href="#">Security Question 1</a>
+                      <a class="dropdown-item" href="#">Security Question 2</a>
+                      <a class="dropdown-item" href="#">Security Question 3</a>
+                    </div>
+                  </div>
+                -->
+
+                  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script>
+                  <div class="input-container">
+                    <input class="input-field" type="text" placeholder="Input 2" name="Answer">
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="Enter New password" type="password">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="Confirm Password" type="password">
+                    </div>
+                  </div>
+
+                  <!--
+                  <div class="dropdown" style="padding-top: 10px; padding-bottom: 10px;">
+                    <button (click)="myFunction()" class="dropbtn">Security Question: 1
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Security Question 1</a>
+                      <a href="#">Security Question 2</a>
+                      <a href="#">Security Question 3</a>
+                    </div>
+                  </div> 
+
+                  <div class="input-group input-group-alternative">
+                    <input class="form-control" placeholder="Answer" type="answer">
+                  </div>
+                  
+                  <div class="dropdown" style="padding-top: 10px; padding-bottom: 10px;">
+                    <button (click)="myFunction()" class="dropbtn">Security Question: 2
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Security Question 1</a>
+                      <a href="#">Security Question 2</a>
+                      <a href="#">Security Question 3</a>
+                    </div>
+                  </div> 
+  
+                  <div class="input-group input-group-alternative">
+                    <input class="form-control" placeholder="Answer" type="text">
+                  </div>
+                  
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Enter Password" type="password">
+                  </div>
+
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Re-enter Password" type="password">
+                  </div>
+
+                -->
+
+
+                  <!--
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <input class="form-control" placeholder="Answer" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <input class="form-control" placeholder="Security Question: 2" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <input class="form-control" placeholder="Answer" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="New Password" type="password">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="Re-enter Password" type="password">
+                    </div>
+                  </div>
+                -->
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary my-4">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  

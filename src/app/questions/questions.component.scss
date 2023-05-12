@@ -1,0 +1,111 @@
+.text-center {
+  font-size: 20px;
+  color: black;
+}
+
+.input-group {
+    border: 1px solid gray;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.form-control {
+    font-weight: bold;
+    color: black;
+}
+
+.dropbtn {
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  font-size: 16px;
+  border:1px solid;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+*/
+button {
+  width: 356px;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border:1px solid gray;
+  border-radius: 5px;
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+
+  select,
+  &::after {
+    grid-area: select;
+  }
+
+
+  border: 1px solid gray ;
+  border-radius: 0.25rem;
+  padding: 0.65rem 0.5rem;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  // Optional styles
+  // remove for transparency
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+option {
+  white-space: normal;
+}
